@@ -50,7 +50,7 @@ Contenu principal: elle structure dans un document la section majeure pouvant en
 Article: portion de contenu indépendante, se suffisant à elle-même en termes de compréhension. Exemples: article de presse, fiche cinéma, réponse de forum.
 
 #### balise section
-Section: élément générique pour une section de contenu ou d'application web, utilisé à défaut d'un autre élément de section plus sémantique tel que *article*, *nav*, *header*, *f*ooter*, *aside*. A ne pas confondre avec *div* qui n'a aucune valeur sémantique. *Section* doit contenr un titre (élément *h1* à *h6*).
+Section: élément générique pour une section de contenu ou d'application web, utilisé à défaut d'un autre élément de section plus sémantique tel que *article*, *nav*, *header*, *footer*, *aside*. A ne pas confondre avec *div* qui n'a aucune valeur sémantique. *Section* doit contenr un titre (élément *h1* à *h6*).
 
 #### balise nav
 Navigation: regroupe la sélection des principaux liens pour naviguer à travers le site, l'application web ou le document. Ne pas en abuser.
@@ -116,10 +116,58 @@ Tableau de données: structure un tableau de données épaulé par les élément
 
 ## Liens
 
-L'assence même du Web: le lien permet de naviguer d'une page à l'autre
+L'essence même du Web: le lien permet de naviguer d'une page à l'autre
 
 #### balise a
 Lien hypertexte: crée un lien hypertexte permettant de naviguer au sein de la page ou vers une autre page HTML. Son attribut courant est *href* (destination du lien).
 
 #### balise link
 Relation externe: déclare un lien vers des ressources externes, il set couramment employé pour lier une feuille de styles CSS au document HTML au moyen de la relation *stylesheet*.
+
+## Formulaires
+
+#### balise form
+Formulaire: regroupe un ensemble de champs interactifs permettant de recueillir des informations auprès de l'utilisateur Le formulaire est généralement validé à l'aide d'un élément *input type="submit"*.
+
+## *champs de formulaires*
+
+#### balise label
+Etiquette: associe une étiquette à un champ de formulaire, où l'attribut *for* se rapportera à l'attribut *id* du champ en question. L'élément *label* est utile pour aider à la compréhension du formulaire et accroît l'accessibilité.
+
+#### balise input
+Champ d'entrée: un élément interactif (champ) dans un formulaire, défini par son *type*: *text* (texte), *password* (mot de passe), *checkbox* (cases à cocher multiples), *radio* (case à cocher unique), *submit* (validation), *reset* (effacement des champs), *file* (fichier), *image* (soumission avec image), *button* (bouton générique).
+
+#### balise button
+Bouton: crée un bouton étiqueté dans un formulaire. En cliquant sur ce bouton, une action particulière peut être déclenchée avec JavaScript.
+
+#### balise text-area
+Zone d'entrée texte multiligne: une zone de texte de plusieurs lignes et de plusieurs colonnes pour la saisie de textes de longueurs variables.
+
+#### balise select
+Liste de choix: renfere une série d'options qui seront présentées à l'utilisateur dans une liste déroulante. Ne peut contenir directement qu'un élément *option*.
+
+## Attibuts de formulaire
+
+Ces attributs s'appliquent à la quasi-totalité des éléments de formulaire.
+
+#### name
+Nom du champs pour la validation: donne un nom à l'élément d'entrée, polur la réception côté serveur dans les valeurs GET/POST, voire la manipulation avec JavaScript. Ne pas confondre avec *id*.
+
+#### disabled
+Désactivation: désactive le contrôle de l'élément (grisé).
+
+#### form
+Formulaire lié: permet d'associer explicitement un champ à un conteneur *form* (via son identifiant) qui ne serait pas son ancêtre naturel.
+
+#### maxlength
+Longueur maximale du contenu: fixe la longueur maximale du contenu qui peut être entrée dans le champ (nombre de caractères).
+
+#### required
+Champ requis: le champ doit être complété par l'utilisateur pour permettre la validation du formulaire.
+
+#### pattern
+Masque de saisie: spécifie quelle forme doit prendre la valeur entrée pour être valide. Pour la syntaxe, se référer aux expressions régulières. (REGEX)
+
+
+
+
